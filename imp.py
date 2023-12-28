@@ -1,7 +1,6 @@
 import streamlit as st
 import openai
 
-
 # Get the API keys from environment variables
 openai.api_key = "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"
 
@@ -14,11 +13,12 @@ def create_conversation(payload, act):
     ]
 
     try:
-        response = openai.ChatCompletion.create(
+        # Updated to the new API usage
+        response = openai.Completion.create(
             model="gpt-3.5-turbo",
             messages=messages
         )
-        messages.append({"role": "assistant", "content": response['choices'][0]['message']['content']})
+        messages.append({"role": "assistant", "content": response.choices[0].message.content})
     except Exception as e:
         st.write(f"An error occurred: {e}")
         return None
