@@ -1,9 +1,9 @@
 import streamlit as st
 import openai
-import requests
+
 
 # Get the API keys from environment variables
-openai.api_key = "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"
+openai.api_key = "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"
 
 def create_conversation(payload, act):
     system_prompt = f"act as a {mode}"
