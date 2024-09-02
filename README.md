@@ -66,6 +66,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-**Developed with 💡 and ☕ by [Your Name]** 
+**Developed with 💡 and ☕ by Likhit** 
 
 **Explore the power of AI in news writing and beyond!**
